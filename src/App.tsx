@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
 import { Counter } from './bases/Counter'
+import { CounterBy } from './bases/CounterBy';
 function App() {
 
   return (
@@ -9,6 +10,7 @@ function App() {
       <h1>React</h1>
       <hr/>
       <Counter initialValue={ 15 } />
+      <CounterBy/>
     </>
   )
 }
