@@ -1,15 +1,19 @@
 import React from 'react'
 import { useState } from 'react';
 
-Types
 
-export const Counter = ({ initialValue number }) => {
+interface Props {
+    initialValue?: number
+}
 
 
-    const [counter, setCounter] = useState( initialValue )
+export const Counter = ({ initialValue = 0 }: Props) => {
+
+
+    const [counter, setCounter] = useState( initialValue );
 
     const handleClick = () => {
-        setCounter( prev => prev  + 1)
+        setCounter( prev => prev  + 1);
     }
 
     return (
